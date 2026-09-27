@@ -131,7 +131,6 @@
   }
 
   html {
-    scroll-behavior: smooth;
     overflow-x: hidden;
   }
 
@@ -344,6 +343,17 @@
   user-select: none;
   font-style: normal;
   line-height: 1;
+}
+
+.petal-sway {
+  display: inline-block;
+  animation: petal-sway 6s ease-in-out infinite;
+}
+
+/* Skip layout/paint of off-screen sections — keeps long pages smooth */
+main > section {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 1000px;
 }
 
 /* Celebration animations */

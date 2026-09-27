@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useRef, useState, useCallback, useMemo } from "react";
+import { createPortal } from "react-dom";
 import {
   ArrowDown,
   ArrowUp,
@@ -175,16 +176,18 @@ function PetalLayer() {
               left: `${p.left}%`,
               fontSize: `${p.size}px`,
               opacity: p.opacity,
-              animation: `
-              petal-float-${p.animationType} ${p.duration}s linear ${p.delay}s infinite,
-              petal-sway ${p.swayDuration}s ease-in-out ${p.swayDelay}s infinite
-            `,
+              animation: `petal-float-${p.animationType} ${p.duration}s linear ${p.delay}s infinite`,
               "--drift-x": `${p.driftX}px`,
               "--rotate-end": `${p.rotateEnd}deg`,
             } as React.CSSProperties
           }
         >
-          {p.char}
+          <span
+            className="petal-sway"
+            style={{ animationDuration: `${p.swayDuration}s`, animationDelay: `${p.swayDelay}s` }}
+          >
+            {p.char}
+          </span>
         </span>
       ))}
       {fallingLeaves.map((p) => (
@@ -196,16 +199,18 @@ function PetalLayer() {
               left: `${p.left}%`,
               fontSize: `${p.size}px`,
               opacity: p.opacity,
-              animation: `
-              petal-float-slow ${p.duration}s linear ${p.delay}s infinite,
-              petal-sway ${p.swayDuration}s ease-in-out ${p.swayDelay}s infinite
-            `,
+              animation: `petal-float-slow ${p.duration}s linear ${p.delay}s infinite`,
               "--drift-x": `${p.driftX}px`,
               "--rotate-end": `${p.rotateEnd}deg`,
             } as React.CSSProperties
           }
         >
-          {p.char}
+          <span
+            className="petal-sway"
+            style={{ animationDuration: `${p.swayDuration}s`, animationDelay: `${p.swayDelay}s` }}
+          >
+            {p.char}
+          </span>
         </span>
       ))}
     </div>
@@ -252,35 +257,6 @@ function RainEffect({ count = 24, seed = 0 }: { count?: number; seed?: number })
       ))}
     </div>
   );
-}
-
-/* ============================================================
-   SCROLL PARALLAX HOOK
-   ============================================================ */
-
-function useParallax(speed: number = 0.15) {
-  const ref = useRef<HTMLElement>(null);
-  const [offset, setOffset] = useState(0);
-
-  useEffect(() => {
-    const element = ref.current;
-    if (!element) return;
-
-    const handleScroll = () => {
-      const rect = element.getBoundingClientRect();
-      const viewportHeight = window.innerHeight;
-      const elementCenter = rect.top + rect.height / 2;
-      const viewportCenter = viewportHeight / 2;
-      const distance = (elementCenter - viewportCenter) / viewportCenter;
-      setOffset(distance * speed * 100);
-    };
-
-    handleScroll();
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [speed]);
-
-  return { ref, style: { transform: `translate3d(0, ${offset}px, 0)` } };
 }
 
 /* ============================================================
@@ -724,7 +700,7 @@ function HiddenNoteOverlay({
   number: string;
   onClose: () => void;
 }) {
-  return (
+  return createPortal(
     <div
       className="fixed inset-0 z-50 flex items-center justify-center px-4"
       role="dialog"
@@ -762,7 +738,8 @@ function HiddenNoteOverlay({
           ))}
         </div>
       </div>
-    </div>
+    </div>,
+    document.body,
   );
 }
 
@@ -925,7 +902,6 @@ function ChapterContent({
   const [visible, setVisible] = useState(initiallyVisible ?? false);
   const [burst, setBurst] = useState(false);
   const [noteOpen, setNoteOpen] = useState(false);
-  const { ref: parallaxRef, style: parallaxStyle } = useParallax(0.08);
 
   useEffect(() => {
     if (initiallyVisible) return;
@@ -1016,15 +992,11 @@ function ChapterContent({
         />
       )}
       <section
-        ref={(el) => {
-          ref.current = el;
-          parallaxRef.current = el;
-        }}
+        ref={ref}
         id={chapter.id}
         className={`${sectionClass} px-6 py-20 md:py-28 relative`}
         role="region"
         aria-label={`Chapter ${chapter.number}: ${chapter.title}`}
-        style={parallaxStyle}
       >
         {isDarkSection && <RainEffect count={26} seed={index + 1} />}
         <div className="mx-auto max-w-3xl relative z-10">

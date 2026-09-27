@@ -54,7 +54,7 @@ export function PetalCatch({ onClose }: { onClose: () => void }) {
   const scoreRef = useRef(0);
   const livesRef = useRef(3);
   const elapsedRef = useRef(0);
-  const spawnInRef = useRef(0.6);
+  const spawnInRef = useRef(0.4);
   const nextIdRef = useRef(1);
 
   const [phase, setPhase] = useState<GameState>("idle");
@@ -87,7 +87,7 @@ export function PetalCatch({ onClose }: { onClose: () => void }) {
     scoreRef.current = 0;
     livesRef.current = 3;
     elapsedRef.current = 0;
-    spawnInRef.current = 0.6;
+    spawnInRef.current = 0.4;
     setFinalScore(0);
     setPhase("playing");
   };
@@ -110,7 +110,7 @@ export function PetalCatch({ onClose }: { onClose: () => void }) {
 
       spawnInRef.current -= dt;
       if (spawnInRef.current <= 0) {
-        spawnInRef.current = Math.max(0.35, 0.9 - elapsed * 0.012);
+        spawnInRef.current = Math.max(0.22, 0.7 - elapsed * 0.018);
         const isWilted = Math.random() < Math.min(0.28, 0.15 + elapsed * 0.002);
         const size = 20 + Math.random() * 10;
         itemsRef.current.push({
@@ -121,8 +121,7 @@ export function PetalCatch({ onClose }: { onClose: () => void }) {
           y: -size,
           size,
           speed:
-            (58 + Math.min(115, elapsed * 1.8 + scoreRef.current * 0.6)) *
-            (0.85 + Math.random() * 0.3),
+            (95 + Math.min(170, elapsed * 2.8 + scoreRef.current)) * (0.85 + Math.random() * 0.3),
           rot: Math.random() * 360,
           spin: (Math.random() - 0.5) * 90,
         });
