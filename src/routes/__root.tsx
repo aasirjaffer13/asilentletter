@@ -77,8 +77,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "For Anisha" },
-      { name: "description", content: "A quiet digital letter for Anisha—the girl from Mushroom class who became a universe in someone's thoughts." },
+      { title: "For Aneesha" },
+      { name: "description", content: "A quiet digital letter for Aneesha—the girl from Mushroom class who became a universe in someone's thoughts." },
       { name: "author", content: "Someone who notices" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

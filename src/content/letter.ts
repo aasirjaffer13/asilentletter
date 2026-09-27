@@ -1,6 +1,6 @@
 // ============================================
 // THE ORIGINAL LETTER — preserved in source
-// Written by a friend who has a crush on Anisha
+// Written by a friend who has a crush on Aneesha
 // ============================================
 export const originalLetter = `A Letter That Was Never Meant to Be Sent
 
@@ -789,8 +789,8 @@ export type Chapter = (typeof chapters)[number];
 // ============================================
 
 export const siteMeta = {
-  title: "For Anisha — A Letter Never Sent",
-  description: "A quiet digital letter for Anisha—the girl from Mushroom class who became a universe in someone's thoughts.",
-  ogTitle: "For Anisha",
+  title: "For Aneesha — A Letter Never Sent",
+  description: "A quiet digital letter for Aneesha—the girl from Mushroom class who became a universe in someone's thoughts.",
+  ogTitle: "For Aneesha",
   ogDescription: "A letter that was never meant to be sent, but somehow found its way here.",
 } as const;

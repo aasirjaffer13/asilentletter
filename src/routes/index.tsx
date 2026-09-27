@@ -477,7 +477,7 @@ function TheLetter() {
       <div className="mx-auto max-w-3xl">
         <SectionHeading number="—" title="The Letter" subtitle="The words that were never sent. Written to understand, not to confess." />
         <div className="grain border border-border/70 bg-parchment px-4 py-8 md:px-8 md:py-12 shadow-letter paper-texture md:-rotate-[.3deg] hover-lift transition-all duration-500">
-          <h2 className="font-hand text-3xl text-burgundy md:text-4xl">Dear Anisha,</h2>
+          <h2 className="font-hand text-3xl text-burgundy md:text-4xl">Dear Aneesha,</h2>
           <div className="mt-5 font-display text-sm leading-8 text-foreground/80 md:text-base whitespace-pre-wrap overflow-wrap-break-word">{originalLetter}</div>
           <div className="mt-6 pt-4 border-t border-border/50">
             <p className="font-hand text-sm text-muted-foreground text-right md:text-base">— from someone who never planned to fall for you, but did anyway, quietly, completely.</p>
