@@ -15,6 +15,7 @@ import {
   type LucideIcon,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { PetalCatch } from "@/components/PetalCatch";
 import {
   chapters,
   siteMeta,
@@ -773,12 +774,13 @@ function GardenHUD({
   plantedCount,
   notesCount,
   secretUnlocked,
+  onPlay,
 }: {
   plantedCount: number;
   notesCount: number;
   secretUnlocked: boolean;
+  onPlay: () => void;
 }) {
-  if (plantedCount === 0 && notesCount === 0) return null;
   return (
     <div
       className="fixed bottom-5 left-5 z-40 flex items-center gap-3 rounded-full border border-border/40 bg-card/75 px-4 py-2 shadow-letter backdrop-blur-sm"
@@ -804,6 +806,16 @@ function GardenHUD({
           ✦
         </span>
       )}
+      <span className="h-3 w-px bg-border" aria-hidden="true" />
+      <button
+        type="button"
+        onClick={onPlay}
+        className="rounded-full p-1 text-sm transition-transform hover:scale-125 focus-ring"
+        aria-label="Play a little game — catch the petals"
+        title="Play a little game"
+      >
+        🎀
+      </button>
     </div>
   );
 }
@@ -1889,6 +1901,7 @@ function LetterWorld() {
   const [notesFound, setNotesFound] = useState<Record<string, boolean>>({});
   const [hydrated, setHydrated] = useState(false);
   const [megaBurst, setMegaBurst] = useState(false);
+  const [gameOpen, setGameOpen] = useState(false);
 
   const plantedCount = Object.keys(planted).length;
   const notesCount = Object.keys(notesFound).length;
@@ -1947,8 +1960,10 @@ function LetterWorld() {
         plantedCount={plantedCount}
         notesCount={notesCount}
         secretUnlocked={secretUnlocked}
+        onPlay={() => setGameOpen(true)}
       />
       {megaBurst && <MegaConfetti />}
+      {gameOpen && <PetalCatch onClose={() => setGameOpen(false)} />}
       <main className="min-h-screen relative z-0">
         <OpeningScreen />
         <ChapterObserver>

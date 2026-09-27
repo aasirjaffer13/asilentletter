@@ -396,6 +396,16 @@
   animation: fade-in-up 800ms ease-out both;
 }
 
+@keyframes score-pop {
+  0% { opacity: 0; transform: translateY(0) scale(0.8); }
+  20% { opacity: 1; transform: translateY(-6px) scale(1.1); }
+  100% { opacity: 0; transform: translateY(-42px) scale(1); }
+}
+
+@utility animate-score-pop {
+  animation: score-pop 0.7s ease-out forwards;
+}
+
 @utility fade-in-up {
   animation: fade-in-up 600ms ease-out both;
 }
