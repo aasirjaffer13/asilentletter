@@ -537,11 +537,26 @@ export const arviiConfig = {
     ],
   },
   concepts: [
-    ["Selective Attention", "My brain decided you were particularly difficult to ignore, starting from that first Mushroom class."],
-    ["The Halo Effect", "Perhaps this explains why your glasses, your hijab, your walk—all of it feels like poetry."],
-    ["Cognitive Bias", "I'm completely biased. Every ordinary moment with you in it became memorable."],
-    ["Unspoken Affection", "It creates a whole world inside you that the other person never even knows exists."],
-    ["The Mere Exposure Effect", "Seeing you again and again didn't make you ordinary—it made you essential."],
+    [
+      "Selective Attention",
+      "My brain decided you were particularly difficult to ignore, starting from that first Mushroom class.",
+    ],
+    [
+      "The Halo Effect",
+      "Perhaps this explains why your glasses, your hijab, your walk—all of it feels like poetry.",
+    ],
+    [
+      "Cognitive Bias",
+      "I'm completely biased. Every ordinary moment with you in it became memorable.",
+    ],
+    [
+      "Unspoken Affection",
+      "It creates a whole world inside you that the other person never even knows exists.",
+    ],
+    [
+      "The Mere Exposure Effect",
+      "Seeing you again and again didn't make you ordinary—it made you essential.",
+    ],
   ],
   moodboard: [
     ["Mushroom class mornings", "Where a simple glance became a story.", "book"],
@@ -571,22 +586,40 @@ export const arviiConfig = {
   ],
   letter: {
     placeholder: "Write the things that only sound right in your own words…",
-    signoff: "— from someone who never planned to fall for you, but did anyway, quietly, completely.",
+    signoff:
+      "— from someone who never planned to fall for you, but did anyway, quietly, completely.",
   },
-  proposal: "If you ever read this, know that someone found something extraordinary in your ordinary days.",
+  proposal:
+    "If you ever read this, know that someone found something extraordinary in your ordinary days.",
   dateOptions: [
-    ["Coffee", "☕"], ["Sunset walk", "🌆"], ["Bookstore", "📚"],
-    ["Dessert", "🍰"], ["Movie", "🎬"], ["You choose", "✨"],
+    ["Coffee", "☕"],
+    ["Sunset walk", "🌆"],
+    ["Bookstore", "📚"],
+    ["Dessert", "🍰"],
+    ["Movie", "🎬"],
+    ["You choose", "✨"],
   ],
   noMessages: [
-    "Are you sure? 👀", "That button seems nervous.", "Think again, Aneesha.",
-    "You really chose violence.", "Okay… but hear me out.",
-    "The psychology experiment is getting interesting.", "Last chance? 🌙",
+    "Are you sure? 👀",
+    "That button seems nervous.",
+    "Think again, Aneesha.",
+    "You really chose violence.",
+    "Okay… but hear me out.",
+    "The psychology experiment is getting interesting.",
+    "Last chance? 🌙",
   ],
   final: [
     "She was never mine to lose.",
     "Yet somehow, I feel the absence of something that was never mine.",
     "Goodnight, Aneesha. 🌙",
   ],
-  personal: { memories: [], insideJokes: [], favoriteBooks: [], favoriteSongs: [], favoriteColors: [], photos: [], quotes: [] },
+  personal: {
+    memories: [],
+    insideJokes: [],
+    favoriteBooks: [],
+    favoriteSongs: [],
+    favoriteColors: [],
+    photos: [],
+    quotes: [],
+  },
 } as const;

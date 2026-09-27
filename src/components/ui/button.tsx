@@ -16,9 +16,12 @@ const buttonVariants = cva(
         secondary: "bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-        letter: "rounded-full bg-primary text-primary-foreground shadow-letter hover:-translate-y-0.5 hover:bg-primary/92",
-        delicate: "rounded-full border border-border bg-background/70 text-foreground shadow-soft backdrop-blur-sm hover:-translate-y-0.5 hover:bg-accent",
-        moonlit: "rounded-full border border-proposal-foreground/30 bg-proposal-foreground/10 text-proposal-foreground shadow-glow backdrop-blur-sm hover:bg-proposal-foreground/18",
+        letter:
+          "rounded-full bg-primary text-primary-foreground shadow-letter hover:-translate-y-0.5 hover:bg-primary/92",
+        delicate:
+          "rounded-full border border-border bg-background/70 text-foreground shadow-soft backdrop-blur-sm hover:-translate-y-0.5 hover:bg-accent",
+        moonlit:
+          "rounded-full border border-warm-gold/40 bg-warm-gold/15 text-primary shadow-glow backdrop-blur-sm transition-colors hover:bg-warm-gold/25 hover:text-primary",
       },
       size: {
         default: "h-9 px-4 py-2",

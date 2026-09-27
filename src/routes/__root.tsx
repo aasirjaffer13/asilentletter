@@ -78,7 +78,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "For Aneesha" },
-      { name: "description", content: "A quiet digital letter for Aneesha—the girl from Mushroom class who became a universe in someone's thoughts." },
+      {
+        name: "description",
+        content:
+          "A quiet digital letter for Aneesha—the girl from Mushroom class who became a universe in someone's thoughts.",
+      },
       { name: "author", content: "Someone who notices" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -91,7 +95,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
-      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&family=DM+Sans:wght@300;400;500&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&family=DM+Sans:wght@300;400;500&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap",
+      },
     ],
   }),
   shellComponent: RootShell,

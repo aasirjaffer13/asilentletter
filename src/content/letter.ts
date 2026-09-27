@@ -521,9 +521,12 @@ she will know that while she was simply living her ordinary days, someone was qu
 export const chapters = [
   {
     id: "opening",
+    hiddenNote:
+      "Agar yeh khat kabhi tum tak pohanch jaye — toh bas itna samajh lena, yeh alfaaz kabhi bhejne ke liye nahi, sirf keh dene ke liye likhe gaye the.",
     number: "00",
     title: "A Letter That Was Never Meant to Be Sent",
-    subtitle: "Perhaps this was never really meant for her. Perhaps it was only meant to be written.",
+    subtitle:
+      "Perhaps this was never really meant for her. Perhaps it was only meant to be written.",
     lines: [
       "I don't know why I'm writing this.",
       "Maybe because there are some things that become heavier when they remain inside you for too long.",
@@ -536,9 +539,12 @@ export const chapters = [
   },
   {
     id: "ordinary-beginning",
+    hiddenNote:
+      "Us din tumne shayad mujhe dekha bhi nahi. Phir bhi mere liye woh class pehli class ban gayi jise main aaj tak yaad rakhta hoon.",
     number: "01",
     title: "The Ordinary Beginning",
-    subtitle: "There was nothing dramatic about it. No sudden realization, no extraordinary moment.",
+    subtitle:
+      "There was nothing dramatic about it. No sudden realization, no extraordinary moment.",
     lines: [
       "It feels strange when I think about how ordinary everything was in the beginning.",
       "I remember seeing her for the first time in the Mushroom class.",
@@ -549,6 +555,8 @@ export const chapters = [
   },
   {
     id: "one-look",
+    hiddenNote:
+      "Ek nazar kaafi hoti hai. Baaki sab toh bas meri zehan ki kasauti hai — jo har roz tumhe dhoondti rehti hai.",
     number: "02",
     title: "One Look",
     subtitle: "Then I started seeing her again. Sometimes in class, sometimes just passing by.",
@@ -563,15 +571,26 @@ export const chapters = [
   },
   {
     id: "noticing",
+    hiddenNote:
+      "Tumhare glasses mein jo reflection aata hai — maine ek baar woh padhne ki koshish ki thi. Woh chapter shayad mera favourite ban gaya.",
     number: "03",
     title: "I Started Noticing",
     subtitle: "The little things. Her glasses. Her hijab. The way she walks.",
     details: [
       { label: "Her glasses", description: "A small detail that became a landmark in my days." },
-      { label: "Her hijab", description: "Simple, elegant, and somehow the most beautiful thing in the room." },
+      {
+        label: "Her hijab",
+        description: "Simple, elegant, and somehow the most beautiful thing in the room.",
+      },
       { label: "The way she walks", description: "Quiet grace that doesn't ask to be noticed." },
-      { label: "The way she carries herself", description: "A quiet grace in how she carries herself that lingers in memory." },
-      { label: "Her little expressions", description: "Probably mean absolutely nothing to her, but somehow stay in my mind." },
+      {
+        label: "The way she carries herself",
+        description: "A quiet grace in how she carries herself that lingers in memory.",
+      },
+      {
+        label: "Her little expressions",
+        description: "Probably mean absolutely nothing to her, but somehow stay in my mind.",
+      },
     ],
     lines: [
       "I started noticing the little things.",
@@ -584,9 +603,12 @@ export const chapters = [
   },
   {
     id: "looking-for-her",
+    hiddenNote:
+      "College ke gate pe nazar uthana... sirf isliye nahi ki der ho rahi thi, balki isliye ke shayad aaj phir nazar aa jao.",
     number: "04",
     title: "Looking for Her",
-    subtitle: "I would enter college and my eyes would look for her. Not deliberately. Not consciously. Bas khud-ba-khud.",
+    subtitle:
+      "I would enter college and my eyes would look for her. Not deliberately. Not consciously. Bas khud-ba-khud.",
     lines: [
       "I don't remember exactly when I started waiting to see her.",
       "There wasn't a particular day. It happened so gradually that I only realized it after it had already become a habit.",
@@ -600,6 +622,8 @@ export const chapters = [
   },
   {
     id: "along-the-way",
+    hiddenNote:
+      "Kabhi kabhi lagta hai tumhe pata hai. Phir sab kuch normal ho jaata hai... aur lagta hai sirf khayal tha.",
     number: "05",
     title: "Somewhere Along the Way",
     subtitle: "She became a presence without ever becoming a part of my life.",
@@ -618,9 +642,12 @@ export const chapters = [
   },
   {
     id: "confession",
+    hiddenNote:
+      "Mere haath kaanp rahe the. Jo lafz maine raato ko taiyaar kiye the, woh sab ek hi pal mein bhool gaye.",
     number: "06",
     title: "The Confession",
-    subtitle: "The semester exams ended. And I finally did something I had been afraid of doing for a long time.",
+    subtitle:
+      "The semester exams ended. And I finally did something I had been afraid of doing for a long time.",
     lines: [
       "Then the semester exams ended.",
       "And I finally did something I had been afraid of doing for a long time.",
@@ -631,9 +658,12 @@ export const chapters = [
   },
   {
     id: "no",
+    hiddenNote:
+      "'No' sunka toh muskuraya taaki koi na dekhe. Ghar jaakar samajh aaya — muskaan hi zaroori thi, warna sab kuch toot jaata.",
     number: "07",
-    title: "\"No.\"",
-    subtitle: "Just one small word. Ek chhota sa lafz kabhi kabhi insaan ke andar bohot lambi khamoshi chhor deta hai.",
+    title: '"No."',
+    subtitle:
+      "Just one small word. Ek chhota sa lafz kabhi kabhi insaan ke andar bohot lambi khamoshi chhor deta hai.",
     lines: [
       "And then came her answer.",
       "No.",
@@ -645,6 +675,8 @@ export const chapters = [
   },
   {
     id: "afterwards",
+    hiddenNote:
+      "Tumne ek chhota sa lafz kaha tha. Main poora mahina usi ek lafz mein jeeta hoon — aur koi shikayat nahi.",
     number: "08",
     title: "What Happened After",
     subtitle: "The mind understands things much faster than the heart does.",
@@ -662,9 +694,12 @@ export const chapters = [
   },
   {
     id: "self-awareness",
+    hiddenNote:
+      "Shayad main tumhe sach mein nahi jaanta. Par tum mere khayalon ka sabse pyaara hissa ban chuki ho — yeh bhi ek sach hai.",
     number: "09",
     title: "Maybe I Don't Know Her Enough",
-    subtitle: "Maybe I call it love. Maybe I don't. Maybe I fell for glimpses. Maybe I fell for moments.",
+    subtitle:
+      "Maybe I call it love. Maybe I don't. Maybe I fell for glimpses. Maybe I fell for moments.",
     lines: [
       "I don't know whether I should call that love. Maybe it is. Maybe it isn't.",
       "Maybe I don't know her enough to give this feeling such a serious name.",
@@ -677,6 +712,7 @@ export const chapters = [
   },
   {
     id: "presence-without-place",
+    hiddenNote: "Class mein hona... tumhare hone ka bahana hai. Warna woh classrooms aam se lagte.",
     number: "10",
     title: "A Presence Without a Place",
     subtitle: "She became a presence without ever becoming a part of my life.",
@@ -695,6 +731,8 @@ export const chapters = [
   },
   {
     id: "ordinary-moments",
+    hiddenNote:
+      "Woh din ab 'woh din' ban chuka hai — jisme tum thi, aur baaki sab cheezein peeche reh gayin.",
     number: "11",
     title: "Ordinary Moments",
     subtitle: "For her: an ordinary moment. For me: a memory.",
@@ -710,9 +748,12 @@ export const chapters = [
   },
   {
     id: "hope",
+    hiddenNote:
+      "Umeed ziddi cheez hai. Jab sab log thak jaate hain, yeh phir bhi chhoti si ho kar bhi jag jaati hai.",
     number: "12",
     title: "The Hope I Don't Ask For",
-    subtitle: "Not the kind of hope that demands something. Not the kind that waits impatiently for an answer.",
+    subtitle:
+      "Not the kind of hope that demands something. Not the kind that waits impatiently for an answer.",
     lines: [
       "Maybe that's why I'm writing this. Not to send it. Not to make her feel responsible for something she never asked for. Not to make her change her mind. Bas apne aap ko samjhane ke liye.",
       "Because there are things I cannot say to her, but I can say to myself.",
@@ -726,9 +767,12 @@ export const chapters = [
   },
   {
     id: "light-left-on",
+    hiddenNote:
+      "Chiraag bujha doon? Nahi... shayad ek din koi aa jaye. Aur agar na aaye, toh kam se kam yeh roshni toh rahe.",
     number: "13",
     title: "The Light Left On",
-    subtitle: "Like a light left on in an empty room. You don't know whether anyone will ever come through the door. But you still don't switch it off.",
+    subtitle:
+      "Like a light left on in an empty room. You don't know whether anyone will ever come through the door. But you still don't switch it off.",
     lines: [
       "Some hopes simply remain. Like a light left on in an empty room.",
       "You don't know whether anyone will ever come through the door. But you still don't switch it off.",
@@ -742,6 +786,8 @@ export const chapters = [
   },
   {
     id: "not-possession",
+    hiddenNote:
+      "Tumhari hona chahta nahi. Bas itna chahta hoon — kabhi kabhi apna samjhi jaao. Bas itna hi.",
     number: "14",
     title: "Not Possession",
     subtitle: "Not possession. Not a promise. Not even an answer. Bas samajh.",
@@ -758,9 +804,12 @@ export const chapters = [
   },
   {
     id: "ending",
+    hiddenNote:
+      "Yeh line shayad tum kabhi padhogi. Tab tak yeh alfaz yahin thahre hain — khamoshi mein, bina kisi ummeed ke, phir bhi ummeed ke saath.",
     number: "15",
     title: "Perhaps That's Enough",
-    subtitle: "Bas ek din ek ladki Mushroom ki class mein nazar aayi... aur pata hi nahi chala ke kab meri khamoshi ka ek hissa ban gayi.",
+    subtitle:
+      "Bas ek din ek ladki Mushroom ki class mein nazar aayi... aur pata hi nahi chala ke kab meri khamoshi ka ek hissa ban gayi.",
     lines: [
       "I never planned to fall for her. I didn't ask for it. I didn't choose the moment. I didn't even notice when it happened.",
       "Bas ek din ek ladki Mushroom ki class mein nazar aayi...",
@@ -790,7 +839,17 @@ export type Chapter = (typeof chapters)[number];
 
 export const siteMeta = {
   title: "For Aneesha — A Letter Never Sent",
-  description: "A quiet digital letter for Aneesha—the girl from Mushroom class who became a universe in someone's thoughts.",
+  description:
+    "A quiet digital letter for Aneesha—the girl from Mushroom class who became a universe in someone's thoughts.",
   ogTitle: "For Aneesha",
   ogDescription: "A letter that was never meant to be sent, but somehow found its way here.",
+} as const;
+
+// ============================================
+// THE SEVENTEENTH NOTE — unlocked when all 16 hidden notes are found
+// ============================================
+
+export const secretSeventeenth = {
+  title: "The Seventeenth Note",
+  text: "Tumne saare chhote raaz dhoondh liye. Toh ab woh baat bhi keh deta hoon jo is pure khat mein kabhi nahi likhi: yeh khat shayad tumhare liye likha gaya tha — par yeh tab tak adhura hai jab tak koi isse padh na le. Tumne pada. Ab yeh khat tumhara nahi, mera nahi — bas hum dono ka ek chhota sa raaz hai, jo 16 chhote raazon ke peeche chhupa tha.",
 } as const;
